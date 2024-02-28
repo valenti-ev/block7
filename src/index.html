@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+  <header>
+    <nav class="nav">
+      <div class="nav__icons-left">
+        <button class="nav__button">
+          <img src="img/burger.svg" alt="Три горизонтальные полоски" />
+        </button>
+        <div class="nav__logo">
+          <img src="img/divider.svg" alt="Вертикальная черта" />
+          <img src="img/Group.svg" alt="Логотип" />
+        </div>
+      </div>
+
+      <ul class="nav__icons-right">
+        <li>
+          <button class="nav__button">
+            <img src="img/call.svg" alt="Телефонная трубка" />
+          </button>
+        </li>
+        <li>
+          <button class="nav__button">
+            <img src="img/chat.svg" alt="Сообщение" />
+          </button>
+        </li>
+        <li>
+          <button class="nav__button">
+            <img src="img/profile.svg" alt="Личный кабинет" />
+          </button>
+        </li>
+        <li>
+          <img src="img/divider.svg" alt="Вертикальная черта" />
+          <button class="nav__button">
+            <img src="img/repair.svg" alt="Гаечный ключ" />
+          </button>
+        </li>
+        <li>
+          <button class="nav__button">
+            <img src="img/checkstatus.svg" alt="Поиск" />
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="title">
+
+        <h1 class="title__service">Услуги и сервисы</h1>
+
+
+      <ul class="title__list">
+        <li>
+          <button class="title__icon">
+            <span class="title__text">Оставить заявку</span>
+            <img
+              class="title__img"
+              src="img/repair.svg"
+              alt="Гаечный ключ"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button class="title__icon">
+            <span class="title__text">Статус ремонта</span>
+            <img
+              class="title__image"
+              src="img/checkstatus.svg"
+              alt="Поиск"
+            />
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="carousel">
+      <a class="carousel__a">Ремонтируемые устройства</a>
+      <a class="carousel__a">Ремонтируемые бренды</a>
+      <a class="carousel__a">Дополнительные услуги</a>
+      <a class="carousel__a">Цены на услуги</a>
+      <a class="carousel__a">Адреса сервисных центров</a>
+      <a class="carousel__a">Специальные цены</a>
+      <a class="carousel__a">Отзывы</a>
+    </section>
+
+    <section class="information">
+      <div class="information__block">
+        <p class="information__text">
+          Мы являемся авторизованным сервисным центром по ремонту техники
+          Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+          официальной гарантией производителя.
+        </p>
+        <p class="information__text">
+          Мы успешно работаем с 1992 года и заслужили репутацию надежного
+          партнера, что подтверждает большое количество постоянных клиентов.
+          Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+          очередь, советуют нас родным и близким.
+        </p>
+        <div class="information__button">
+          <img src="img/expand.svg" alt="Стрелка вниз" />
+          <button class="information__next">
+            <span> Читать далее </span>
+          </button>
+        </div>
+      </div>
+      <img
+        class="information__foto"
+        src="img/foto.png"
+        alt="Фотография вывески с логотипом"
+      />
+    </section>
+
+<!--  2 часть-->
+  <h2>Ремонт техники различных брендов</h2>
+  <div class="swiper swiper-container">
+    <!-- Оболочка для слайдера -->
+    <ul class="swiper-wrapper">
+      <!-- Оболочка для отдельного слайда -->
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/lenovo.svg" alt="lenovo" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/samsung.svg" alt="samsung" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/apple.svg" alt="apple" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/view.png" alt="view sonic" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/borsh.svg" alt="borsh" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/hp.svg" alt="hp" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/aser.svg" alt="acer" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/sony.svg" alt="sony" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/lenovo.svg" alt="lenovo" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/borsh.svg" alt="borsh" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/samsung.svg" alt="samsung" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+      <li class="swiper-slide brand">
+        <a class="brand__link" href="#">
+          <img class="brand__label" src="img/hp.svg" alt="hp" />
+          <img src="img/go.svg" alt="Кнопка-стрелка" />
+        </a>
+      </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <button class="more">
+    <img class="more__cursor" src="img/expand.svg" alt="Стрелка вниз" />
+    <p class="more__button">Показать все</p>
+  </button>
+
+<!--    3 часть-->
+
+    <h2>Ремонт различных видов техники</h2>
+    <div class="swiper swiper-container">
+      <!-- Оболочка для слайдера -->
+      <ul class="swiper-wrapper">
+        <!-- Оболочка для отдельного слайда -->
+        <li class="swiper-slide equipment">
+          <a class="equipment__link" href="#">
+            <span>Ремонт ноутбуков</span>
+            <img src="img/go.svg" alt="Кнопка-стрелка" />
+          </a>
+        </li>
+        <li class="swiper-slide equipment">
+          <a class="equipment__link" href="#">
+            <span>Ремонт планшетов</span>
+            <img src="img/go.svg" alt="Кнопка-стрелка" />
+          </a>
+        </li>
+        <li class="swiper-slide equipment">
+          <a class="equipment__link" href="#">
+            <span>Ремонт ПК</span>
+            <img src="img/go.svg" alt="Кнопка-стрелка" />
+          </a>
+        </li>
+        <li class="swiper-slide equipment">
+          <a class="equipment__link" href="#">
+            <span>Ремонт мониторов</span>
+            <img src="img/go.svg" alt="Кнопка-стрелка" />
+          </a>
+        </li>
+        <li class="swiper-slide equipment">
+          <a class="equipment__link" href="#">
+            <span>Ремонт ноутбуков</span>
+            <img src="img/go.svg" alt="Кнопка-стрелка" />
+          </a>
+        </li>
+        <li class="swiper-slide equipment">
+          <a class="equipment__link" href="#">
+            <span>Ремонт планшетов</span>
+            <img src="img/go.svg" alt="Кнопка-стрелка" />
+          </a>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <button class="more">
+      <img class="more__cursor" src="img/expand.svg" alt="Стрелка вниз" />
+      <p class="more__button">Показать все</p>
+    </button>
+
+<!--4 часть-->
+
+    <h2>Цены на услуги</h2>
+    <div class="swiper swiper-container">
+      <!-- Оболочка для слайдера -->
+
+<!--      <ul>-->
+<!--        <li><h3>Ремонтные услуги</h3></li>-->
+<!--        <li><h3>Цена</h3></li>-->
+<!--        <li><h3>Срок</h3></li>-->
+<!--        <li><h3></h3></li>-->
+<!--</ul>-->
+
+      <!-- Оболочка для отдельного слайда -->
+      <ul class="swiper-wrapper price">
+        <li class="swiper-slide cost">
+          <h3>Ремонтные услуги</h3>
+          <span>Тестирование с выдачей технического заключения</span>
+        <li>
+          <h3>Цена</h3>
+          <span>1000 ₽</span>
+        </li>
+        <li>
+          <h3>Срок</h3>
+          <span>30-120 мин</span>
+        </li>
+        <li class="price__button"><button><span>ЗАКАЗАТЬ</span></button></li>
+      </li>
+
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+  </main>
+  </body>
+</html>
