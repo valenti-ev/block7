@@ -1,0 +1,35 @@
+footer {
+  margin-top: 70px;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  line-height: 16px;
+ color: #7E7E82;
+  text-align: center;
+
+}
+@media (max-width: 767px) {
+  .footer__team {
+    margin-bottom: 15px;
+  }
+.footer__politics{
+  margin-bottom: 15px;
+}
+}
+
+@media (min-width: 768px) {
+footer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+
+}
+.footer__team{
+text-align: left;
+margin-left: 20px;
+}
+.footer__offer {
+  text-align: right;
+  margin-right: 20px;
+}
+}

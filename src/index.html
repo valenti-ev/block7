@@ -10,11 +10,143 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
+  <div class="case transparent">
+  </div>
+
+  <div class="full_page">
+
+    <aside class="menu menu-closed">
+      <header class="top">
+        <div class="top__left">
+          <button class="cross">
+            <img src="img/burger_close.svg" alt="Крестик" />
+          </button>
+          <button>
+            <img src="img/Group.svg" alt="Логотип" />
+          </button>
+        </div>
+        <button class="top__right">
+          <img src="img/search.svg" alt="Поиск" />
+        </button>
+      </header>
+
+      <ul class="menu__list">
+        <li class="menu__list__point">
+          <a class="menu__list_active" href="#">Ремонт техники</a>
+        </li>
+        <li class="menu__list__point">
+          <a class="menu__list_active" href="#">Услуги и сервисы</a>
+        </li>
+        <li class="menu__list__point">
+          <a class="menu__list_active" href="#">Корпоративным клиентам</a>
+        </li>
+        <li class="menu__list__point">
+          <a class="menu__list_active" href="#">Продавцам техники</a>
+        </li>
+        <li class="menu__list__point">
+          <a class="menu__list_active" href="#">Партнерам</a>
+        </li>
+        <li class="menu__list__point">
+          <a class="menu__list_active" href="#">Производителям</a>
+        </li>
+        <li class="menu__list__point">
+          <a class="menu__list_active" href="#">Наши сервисные центры</a>
+        </li>
+        <li class="menu__list__point">
+          <a class="menu__list_active" href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="menu__bottom">
+        <ul class="menu__icons">
+          <li>
+            <button class="button-call" >
+              <img src="img/call.svg" alt="Телефонная трубка" />
+            </button>
+          </li>
+          <li>
+            <button class="button-chat">
+              <img src="img/chat.svg"  alt="Сообщение" />
+            </button>
+          </li>
+          <li>
+            <button>
+              <img src="img/profile.svg" alt="Личный кабинет" />
+            </button>
+          </li>
+        </ul>
+
+        <div class="menu__contact">
+          <a href="mailto:mail@cps.com" class="menu__contact__email"
+          >mail@cps.com</a
+          >
+          <a href="tel: 8 800 890 8900" class="menu__contact__phone"
+          >8 800 890 8900</a
+          >
+        </div>
+        <ul class="menu__language">
+          <li><button class="menu__language_active">RU</button></li>
+          <li><button class="menu__language_active">EN</button></li>
+          <li><button class="menu__language_active">CH</button></li>
+        </ul>
+      </div>
+    </aside>
+
+
+<div class="page">
+<form class="chat chat-closed">
+<div class="feedback__flex">
+    <img src="img/burger_close.svg" alt="Крестик" class="chat__img" id="chat-img">
+  <h3 class="chat__title">Обратная связь</h3>
+  </div>
+    <div class="chat__wrapper">
+      <ul class="chat__list">
+  <li>
+    <input type="text" name="name" placeholder="Имя">
+  </li>
+  <li>
+    <input type="tel" name="tel" placeholder="Телефон">
+  </li>
+  <li>
+    <input type="email" name="email" placeholder="Электронная почта">
+  </li>
+  <li>
+    <input type="text" required placeholder="Сообщение">
+  </li>
+      </ul>
+  <p class="chat__agreement">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+  <button type="submit" class="chat__button">
+    <span>
+    Отправить</span>
+    <img src="img/goside.svg" alt="Стрелка вперед">
+  </button>
+  </div>
+</form>
+
+  <form class="call call-closed">
+    <div class="call__flex">
+      <img src="img/burger_close.svg" alt="Крестик" class="call__img" id="call-img">
+      <h3 class="call__title">Заказать звонок</h3>
+    </div>
+    <div class="call__wrapper">
+          <input type="tel" name="tel" placeholder="Телефон">
+
+      <p class="call__agreement">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+      <button type="submit" class="call__button">
+    <span>
+    Отправить</span>
+        <img src="img/goside.svg" alt="Стрелка вперед">
+      </button>
+    </div>
+  </form>
+
+<!--  <div class="case">-->
+<!--  </div>-->
   <header>
     <nav class="nav">
       <div class="nav__icons-left">
-        <button class="nav__button">
-          <img src="img/burger.svg" alt="Три горизонтальные полоски" />
+        <button class="nav__button gamburger">
+          <img  src="img/burger.svg" alt="Три горизонтальные полоски" />
         </button>
         <div class="nav__logo">
           <img src="img/divider.svg" alt="Вертикальная черта" />
@@ -24,12 +156,12 @@
 
       <ul class="nav__icons-right">
         <li>
-          <button class="nav__button">
+          <button class="nav__button button-call">
             <img src="img/call.svg" alt="Телефонная трубка" />
           </button>
         </li>
         <li>
-          <button class="nav__button">
+          <button class="nav__button button-chat">
             <img src="img/chat.svg" alt="Сообщение" />
           </button>
         </li>
@@ -211,7 +343,7 @@
     <h2>Ремонт различных видов техники</h2>
     <div class="swiper swiper-container">
       <!-- Оболочка для слайдера -->
-      <ul class="swiper-wrapper">
+      <ul class="swiper-wrapper repairs">
         <!-- Оболочка для отдельного слайда -->
         <li class="swiper-slide equipment">
           <a class="equipment__link" href="#">
@@ -253,47 +385,169 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <button class="more">
-      <img class="more__cursor" src="img/expand.svg" alt="Стрелка вниз" />
-      <p class="more__button">Показать все</p>
+    <button class="over">
+      <img class="over__cursor" src="img/expand.svg" alt="Стрелка вниз" />
+      <p class="over__button">Показать все</p>
     </button>
 
 <!--4 часть-->
 
     <h2>Цены на услуги</h2>
     <div class="swiper swiper-container">
-      <!-- Оболочка для слайдера -->
+      <div class="main swiper-wrapper">
 
-<!--      <ul>-->
-<!--        <li><h3>Ремонтные услуги</h3></li>-->
-<!--        <li><h3>Цена</h3></li>-->
-<!--        <li><h3>Срок</h3></li>-->
-<!--        <li><h3></h3></li>-->
-<!--</ul>-->
+        <ul class="prices__head-table">
+          <li class="table__name"><h3>Ремонтные услуги</h3></li>
+          <li class="table__cost"><h3>Цена</h3></li>
+          <li class="table__period"><h3>Срок</h3></li>
 
-      <!-- Оболочка для отдельного слайда -->
-      <ul class="swiper-wrapper price">
-        <li class="swiper-slide cost">
+        </ul>
+
+        <ul class="swiper-slide price">
+          <li class="price__name">
+            <h3>Ремонтные услуги</h3>
+            <span>Диагностика</span><br>
+          <li class="price__cost">
+            <h3>Цена</h3>
+            <span>Бесплатно</span>
+          </li>
+          <div class="price__order">
+            <li class="price__period">
+              <h3>Срок</h3>
+              <span>30 мин</span>
+            </li>
+            <li class="price__button">
+              <button>
+                <span>ЗАКАЗАТЬ</span>
+                <img src="img/goside.svg" alt="Стрелка вперед">
+              </button>
+            </li>
+          </div>
+        </ul>
+
+
+      <ul class="swiper-slide price">
+        <li class="price__name">
           <h3>Ремонтные услуги</h3>
-          <span>Тестирование с выдачей технического заключения</span>
-        <li>
+          <span>Тестирование с выдачей <br>технического заключения</br></span>
+        <li class="price__cost">
           <h3>Цена</h3>
           <span>1000 ₽</span>
         </li>
-        <li>
+        <div class="price__order">
+        <li class="price__period">
           <h3>Срок</h3>
           <span>30-120 мин</span>
         </li>
-        <li class="price__button"><button><span>ЗАКАЗАТЬ</span></button></li>
-      </li>
-
+        <li class="price__button">
+          <button>
+            <span>ЗАКАЗАТЬ</span>
+            <img src="img/goside.svg" alt="Стрелка вперед">
+          </button>
+          </div>
+        </li>
       </ul>
+
+
+
+        <ul class="swiper-slide price">
+          <li class="price__name">
+            <h3>Ремонтные услуги</h3>
+            <span>Замена дисплея</span><br>
+          <li class="price__cost">
+            <h3>Цена</h3>
+            <span>1000 ₽</span>
+          </li>
+          <div class="price__order">
+            <li class="price__period">
+              <h3>Срок</h3>
+              <span>30-120 мин</span>
+            </li>
+            <li class="price__button">
+              <button>
+                <span>ЗАКАЗАТЬ</span>
+                <img src="img/goside.svg" alt="Стрелка вперед">
+              </button>
+            </li>
+          </div>
+        </ul>
+
+
+        <ul class="swiper-slide price">
+          <li class="price__name">
+            <h3>Ремонтные услуги</h3>
+            <span>Замена полифонического динамика</span>
+          <li class="price__cost">
+            <h3>Цена</h3>
+            <span>1000 ₽</span>
+          </li>
+          <div class="price__order">
+            <li class="price__period">
+              <h3>Срок</h3>
+              <span>30-120 мин</span>
+            </li>
+            <li class="price__button">
+              <button>
+                <span>ЗАКАЗАТЬ</span>
+                <img src="img/goside.svg" alt="Стрелка вперед">
+              </button>
+            </li>
+          </div>
+        </ul>
+
+
+        <ul class="swiper-slide price">
+          <li class="price__name">
+            <h3>Ремонтные услуги</h3>
+            <span>Замена программного обеспечения</span>
+          <li class="price__cost">
+            <h3>Цена</h3>
+            <span>1000 ₽</span>
+          </li>
+          <div class="price__order">
+            <li class="price__period">
+              <h3>Срок</h3>
+              <span>30-120 мин</span>
+            </li>
+            <li class="price__button">
+              <button>
+                <span>ЗАКАЗАТЬ</span>
+                <img src="img/goside.svg" alt="Стрелка вперед">
+              </button>
+            </li>
+          </div>
+        </ul>
+
+      </div>
       <div class="swiper-pagination"></div>
     </div>
 
 
 
 
+
+
+<p class="info">Все цены указаны с учетом НДС.
+  Стоимость ремонта указана на единичную услугу.
+  Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+    <p class="offer"><a>Получить коммерческое предложение</a>
+    <button><img src="img/Line.svg" alt="Стрелка вперед"></button></p>
+
+
   </main>
+
+  <footer>
+    <div class="footer__team">© 2019 CPS<br>
+      Разработано командой Apesong </div>
+    <div class="footer__politics">Политика конфиденциальности </div>
+    <div class="footer__offer">Информация, размещенная на данной странице, не является публичной офертой </div>
+  </footer>
+</div>
+
+
+
+  </div>
+
+
   </body>
 </html>
